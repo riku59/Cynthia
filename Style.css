@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+body {
+    
+    
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3b3838;
+}
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 5px solid #000000; /*met une ligne en dessous de la zone ciblé. */
+        background-color: #000000;
+        
+    }
+
+h1 {
+    
+/* text-transform: uppercase; */   /* met en majuscule */
+ color: rgb(247, 3, 3); /* change la couleur du texte*/
+/* text-align: center; */  /* centre le texte  */
+/* letter-spacing: 2px; */   /* espacrement entre les lettres */
+font-family: 'Montserrat', sans-serif;;  /* change l'écriture  */
+  font-size: 45px;
+  /* text-shadow: 9px 7px 5px black; */    /* ombre derriere le texte  */
+
+}
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px ; /* espacement 300 pixel entre le h1 et les liens */
+
+}
+ nav .onglets a{
+    text-decoration: none;  /* enleve le surlignement des lien */
+    color: #ffffff;  /*change la couleur des liens */
+    margin-right: 10px ;   /*marge extérieur droite de 10 px */
+    border-bottom: 1px solid rgb(240, 0, 0);  /* soulignement en dessous des lien de 1px */
+    font-size: 20px; /* changement taille écriture */
+    padding-bottom: 10px; /* marge extérieur en dessous */
+    font-weight: bolder; /*met en gras */
+}
+header{
+   display: flex;  /*aligne tout les élement */ 
+   flex-direction: column; /* met les éléments en colonne */
+   align-items: center; /* aligne au centre */
+   /* background: url(./fond.jpg) fixed center/cover ; */
+   background-color: rgb(0, 0, 0);
+   background-size: cover;  /*prend toute l'image */
+   color: rgb(196, 125, 184);
+   padding: 50px;
+}
+header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px; /*change la taille du titre h2 dans header */
+}
+header h4 {
+    margin-top: -20px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255); /* souligne le texte */
+}
+header button {
+    padding: 15px 30px; /*marge haut et bas de 10px et gauche droite de 20 px */
+    background-color: #ffffff57;
+    color: #0400fc;
+    border:none ; /*enleve la marge */
+    font-size: 20px;
+    cursor: pointer; /*met un curseur lorsque la souris passe sur le boutton */
+}
+
+/* h1 { */
+    /* met un fond derriere la partie du texte  */
+    /* background: #f5f5f52e; */
+    /* largeur en px , vw ou %(préferable en %)*/
+    /* width: 85%; */
+    /* text-align: center; */
+    /* hauteur minimale */
+    /* min-height: 100px; */
+    /* met une marge sur les 4 cotés extérieur de la box.  */
+    /* exemple : margin: 100px 100px 100px 100px ; 2 valeur = haut bas et gauche droite*/
+    /* meme valeur a droite et a gauche, mettre la 2eme valeur a auto */
+    /* arrondir les bord  */
+    
+    /* border-radius: 20px; */
+    /* mettre une marge a l'interieur de la box  // padding 100px 100px*/
+    /* padding:  15px ; */
+    /* mettre une ombre  */
+    /* box-shadow: 17px -13px 15px 4px #e300ff8c; */
+    
+/* } */
+/* séléctionner une classe :(.xx) /// selectrionne une id (#xxxx) */
+
+ .exemple{
+  min-height: 500px; /* hauteur minimal de 500 pixel */
+  width: 100%;   /*largeur 100% */
+  background-color: rgb(240, 248, 255); /*couleur de fond de la box */
+  margin-top: 50px ; /*marge extérieur de la boite*/
+  border: 2px solid rgb(0, 0, 0) ; /*bordure de couleur autour de la box */
+  border-radius: 10px; /* arrondie les bords*/
+  box-shadow: 5px -5px 11px 0px #00000078; /*ombre de la boite */
+  padding: 10px; /* marge a l'interieur de la box */
+   /*centre le text */
+  background-color: rgb(2, 0, 0);
+ }
+ 
+ .photo {
+    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    justify-items: center;
+
+    
+ }
+
+/*la flexbox sert a répartir équitablement des éléments sur la page. */
+.photo ul {
+    padding: 0px;
+    display: flex;
+    
+    justify-content: space-evenly; /* permet de repartir équitablement les espace */
+    flex-wrap: wrap; /* permet de les placer en ligne et colonne. */
+    align-items: center; /* centre les élement vers le milieu */
+    justify-items: center;
+}
+.photo img { /*prends toute les image dans la classe .photo */
+ list-style: none; /*enleve les marqueur de la liste */
+ height: 250px;  /*hauteur*/
+ width: 250px;      /*largeur*/
+ margin: 10px;     /*marge extérieur */
+ /* background: crimson;  couleur d'arriere plan */
+
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid black;
+    background-color: #444444;
+    color: white;
+    padding: 30px 100px;
+}
+footer h2{
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 45px;
+}
+footer h3{
+    font-size: 30px;
+}
+footer .informations {
+    margin-top: -10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly ;
+}
+footer .informations .information {
+margin-right: 30px ;
+padding: 10px;
+}
+footer .informations .information a{
+    font-size: 30px;
+    color: blanchedalmond;
+    text-decoration: none ;
+    
+}
+
+
+@media screen and (max-width: 680px) {   /* si la taille de l'écran est inférieur a 680px, on enleve la marge */
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    footer {
+        padding: 30px;
+    }
+    .photo img{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 50px 1fr);
+        width: 150px;
+        height: 150px;
+    }
+}

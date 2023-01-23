@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root{
+    --color1: #ede4d0;
+    --color2: pink; 
+    --color3: #393b4b;
+    --color4: black;   
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: var(--color1)
+    
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #000000; /*met une ligne en dessous de la zone ciblé. */
+    background-color: #000000;
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1::selection {   /*change le surlignage lors de la selection du texte */
+    background: red;
+    color: black;
+}
+nav .onglets {
+    margin-top: 3px; 
+    margin-left: 300px;
+}
+nav .onglets a {
+    text-decoration: none;
+    color: var(--color2);
+    margin-right: 10px;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+header {
+    background-color: rgb(51, 51, 51);
+    padding: 50px;
+    margin-bottom: 50px;
+}
+header h2{
+    font-size: 30px;
+    
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+section {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section ::placeholder {
+}
+section input{
+margin-top: 10px;
+margin-bottom: 10px;
+}  
+    
+
+section input {
+    margin-top: 10px;
+    background-color: #424242;
+    display: flex;
+    
+}
+section textarea {
+    margin-top: 10px;
+    background-color: #424242;
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid black;
+    background-color: #000000;
+    padding: 30px 100px;
+}
+footer h2{
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 45px;
+}
+footer h3{
+    font-size: 30px;
+}
+footer .informations {
+    margin-top: -10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly ;
+}
+footer .informations .information {
+margin-right: 30px ;
+padding: 10px;
+}
+footer .informations .information a{
+    font-size: 30px;
+    color: blanchedalmond;
+    text-decoration: none ;
+    
+}
